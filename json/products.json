@@ -1,0 +1,99 @@
+[
+	{
+		"name": "Smartphone",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/416TS-ODxfL._AC_US218_.jpg",
+		"price": "Rp 3.900.000",
+		"bestprice": true,
+		"availability": "5",
+		"category":"electronic"
+	},
+	{
+		"name": "Smartphone",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/41kW9rqt7AL._AC_US218_.jpg",
+		"price": "Rp 3.900.000",
+		"bestprice": false,
+		"availability": "4",
+		"category":"electronic"
+	},
+	{
+		"name": "Smartphone",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/51y5Cu+v8dL._AC_US218_.jpg",
+		"price": "Rp 3.900.000",
+		"bestprice": false,
+		"availability": "3",
+		"category":"electronic"
+	},
+	{
+		"name": "Smartphone",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/416TS-ODxfL._AC_US218_.jpg",
+		"price": "Rp 3.900.000",
+		"bestprice": false,
+		"availability": "2",
+		"category":"electronic"
+	},
+	{
+		"name": "Smartphone",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/51y5Cu+v8dL._AC_US218_.jpg",
+		"price": "Rp 3.900.000",
+		"bestprice": false,
+		"availability": "1",
+		"category":"electronic"
+	},
+	{
+		"name": "Smartphone",
+		"url": "http://ecx.images-amazon.com/images/I/51nTYG54myL._US88_.jpg",
+		"price": "Rp 3.900.000",
+		"bestprice": false,
+		"availability": "0",
+		"category":"electronic"
+	},
+	{
+		"name": "Jacket",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/41LNN0k+i+L._AC_UL260_SR200,260_.jpg",
+		"price": "Rp 300.000",
+		"bestprice": false,
+		"availability": "0",
+		"category":"fashion"
+	}
+	,
+	{
+		"name": "Jacket",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/415YroXhScL._AC_UL260_SR200,260_.jpg",
+		"price": "Rp 200.000",
+		"bestprice": false,
+		"availability": "2",
+		"category":"fashion"
+	},
+	{
+		"name": "Jacket",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/41LNN0k+i+L._AC_UL260_SR200,260_.jpg",
+		"price": "Rp 300.000",
+		"bestprice": false,
+		"availability": "1",
+		"category":"fashion"
+	},
+	{
+		"name": "Jacket",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/415YroXhScL._AC_UL260_SR200,260_.jpg",
+		"price": "Rp 180.000",
+		"bestprice": true,
+		"availability": "0",
+		"category":"fashion"
+	},
+	{
+		"name": "Bicycle",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/51N5kwHh7dL._AC_US160_.jpg",
+		"price": "Rp 1.300.000",
+		"bestprice": false,
+		"availability": "0",
+		"category":"other"
+	},
+	{
+		"name": "Tricycle",
+		"url": "https://images-na.ssl-images-amazon.com/images/I/410C08xD+nL._AC_US160_.jpg",
+		"price": "Rp 800.000",
+		"bestprice": true,
+		"availability": "1",
+		"category":"other"
+	}
+]

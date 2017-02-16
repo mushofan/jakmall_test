@@ -1,0 +1,93 @@
+<!DOCS HTML>
+<html>
+<head>
+	<link href='//fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css"/>
+	<script type="text/javascript" src="vendor/jquery/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="vendor/vue/vue.js"></script>
+	<!--[if (lte IE 8)]>
+		<script type="text/javascript" src="vendor/selectivizr/selectivizr.js"></script>
+	<![endif]-->
+</head>
+<body class="body-block" onload="initTab()">
+	<header class="header-block">
+		<p class="header-elem-title">Halloween Sale</p>
+	</header>
+	<section class="block">
+		<div class="news-event-block">
+			<div class="news-event-image"></div>
+			<div class="news-event-elem">
+				<div class="news-event-title">
+					<p class="news-event-title-elem">Halloween Event</p>
+					<iframe class="news-event-button" src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=large&mobile_iframe=true&width=88&height=28&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div>
+				<h2 class="news-event-subtitle">Shop now and get a Trick or Treat</h2>
+				<p>Yuk, event ini berlaku mulai tanggal 21 - 31 Oktober 2016. Buruan ikutan, produknya lengkap, harga murah, dapet bonus trick or treat juga</p>
+			</div>
+		</div>
+		<ul class="tab" id="tab">
+			<li><a href="#" class="tab-menu" id="electronic-tab" onclick="openTab(event, this.id)"> Elektronik </a></li>
+			<li><a href="#" class="tab-menu" id="fashion-tab" onclick="openTab(event, this.id)"> Fashion </a></li>
+			<li><a href="#" class="tab-menu" id="other-tab" onclick="openTab(event, this.id)"> Lainnya </a></li>
+		</ul>
+		<section class="products" id="products">
+			<div id="electronic" class="tab-content products-catalog" itemscope itemtype="http://schema.org/Product">
+				<div v-for="product in products" v-show="product.category == 'electronic'" class="products-elem">
+					<div class="products-image">
+						<img itemprop="image" class="products-image-elem" v-bind:src="product.url">
+						<p class="products-best-price" v-if="product.bestprice">Best Price</p>
+					</div>
+					<div class="products-info">
+						<p itemprop="name" class="products-info-name"> {{product.name}} </p>
+						<p class="products-info-price"> {{product.price}}</p>
+						<div v-if='product.availability > 0'>
+							<button type="button" class="products-button products-button-buy" onclick="#">Buy Now</button>
+						</div>
+						<div v-else>
+							<button type="button" class="products-button" onclick="#" disabled>Out of stock</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="fashion" class="tab-content products-catalog" itemscope itemtype="http://schema.org/Product">
+				<div v-for="product in products" v-show="product.category == 'fashion'" class="products-elem">
+					<div class="products-image">
+						<img itemprop="image" class="products-image-elem" v-bind:src="product.url">
+						<p class="products-best-price" v-if="product.bestprice">Best Price</p>
+					</div>
+					<div class="products-info">
+						<p itemprop="name" class="products-info-name"> {{product.name}} </p>
+						<p class="products-info-price"> {{product.price}}</p>
+						<div v-if='product.availability > 0'>
+							<button type="button" class="products-button products-button-buy" onclick="#">Buy Now</button>
+						</div>
+						<div v-else>
+							<button type="button" class="products-button" onclick="#" disabled>Out of stock</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="other" class="tab-content products-catalog" itemscope itemtype="http://schema.org/Product">
+				<div v-for="product in products" v-show="product.category == 'other'" class="products-elem">
+					<div class="products-image">
+						<img itemprop="image" class="products-image-elem" v-bind:src="product.url">
+						<p class="products-best-price" v-if="product.bestprice">Best Price</p>
+					</div>
+					<div class="products-info">
+						<p itemprop="name" class="products-info-name"> {{product.name}} </p>
+						<p class="products-info-price"> {{product.price}}</p>
+						<div v-if='product.availability > 0'>
+							<button type="button" class="products-button products-button-buy" onclick="#">Buy Now</button>
+						</div>
+						<div v-else>
+							<button type="button" class="products-button" onclick="#" disabled>Out of stock</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/catalog.js"></script>
+</body>
+</html>
